@@ -1,0 +1,14 @@
+node_modules/
+.next/
+.npm-cache/
+.env
+.env.local
+.env.*
+!.env.example
+.venv/
+__pycache__/
+.pytest_cache/
+*.db
+outputs/
+work/
+backend/.env

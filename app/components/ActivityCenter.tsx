@@ -1,0 +1,3 @@
+import { Clock3, ShieldCheck } from 'lucide-react';
+
+export default function ActivityCenter(){return <div className="feature-page"><div className="feature-intro"><span className="feature-icon"><Clock3 size={18}/></span><div><h2>Activity and analysis history</h2><p>Review activity tied to your account.</p></div></div><div className="feature-card activity-empty"><div className="empty-provider"><span className="feature-icon"><ShieldCheck size={18}/></span><strong>No saved activity yet.</strong><p>Portfolio changes are saved to your account. Analysis conversations are not retained as activity records.</p></div></div></div>}

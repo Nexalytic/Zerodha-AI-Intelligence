@@ -1,0 +1,7 @@
+WINDOWS: double-click start-all.bat  (first run takes a few minutes to install). Then open http://localhost:3000
+Requires Python 3.10+ and Node.js 18+ installed.
+
+MAC/LINUX:
+  Terminal 1:  cd backend && python3 -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt && python -m uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
+  Terminal 2:  npm install && npm run dev
+API keys are already in backend/.env. Do not share this folder or upload it to GitHub.
