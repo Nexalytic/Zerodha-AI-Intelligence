@@ -1,3 +1,13 @@
+export type Recommendation = {
+  type: string;
+  severity: 'LOW' | 'MEDIUM' | 'HIGH' | 'CRITICAL';
+  symbol: string | null;
+  evidence: Record<string, unknown>;
+  reason: string;
+  action: 'REVIEW' | 'MONITOR' | 'HOLD' | 'REDUCE' | 'DIVERSIFY';
+  confidence: number;
+};
+
 export type Holding = { symbol: string; name: string; sector: string; qty: number; avg: number; ltp: number; day: number };
 
 export const inr = (n: number) => new Intl.NumberFormat('en-IN', { style: 'currency', currency: 'INR', maximumFractionDigits: 0 }).format(Number.isFinite(n) ? n : 0);
