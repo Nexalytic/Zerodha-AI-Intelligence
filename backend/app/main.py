@@ -69,11 +69,12 @@ async def observe_requests(request: Request, call_next):
                 # Observability must never break the application.
                 pass
 
+
 origins = [
     origin.strip()
     for origin in os.getenv(
         "CORS_ORIGINS",
-        "http://localhost:3000",
+        "http://localhost:3000,https://euphonious-kringle-abd2bf.netlify.app",
     ).split(",")
     if origin.strip()
 ]
